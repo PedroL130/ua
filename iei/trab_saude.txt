@@ -1,0 +1,232 @@
+\documentclass{report}
+\usepackage[T1]{fontenc} % Fontes T1
+\usepackage[utf8]{inputenc} % Input UTF8
+\usepackage[backend=biber, style=ieee]{biblatex} % para usar bibliografia
+\usepackage{csquotes}
+\usepackage[portuguese]{babel} %Usar língua portuguesa
+\usepackage{blindtext} % Gerar texto automaticamente
+\usepackage[printonlyused]{acronym}
+\usepackage{hyperref} % para autoref
+\usepackage{graphicx}
+\usepackage{indentfirst}
+
+\bibliography{bibliografia}
+
+
+
+\begin{document}
+%%
+% Definições
+%
+\def\titulo{Saúde através do desporto}
+\def\data{18/11/2022}
+\def\autores{Carlos Verenzuela, Pedro Almeida}
+\def\autorescontactos{(114597) carlos.verenzuela@ua.pt, (112937) pedro.e.lopes.a@ua.pt}
+\def\versao{VERSAO1}
+\def\departamento{Dept. de Eletrónica, Telecomunicações e Informática}
+\def\empresa{Universidade de Aveiro}
+\def\logotipo{ua.pdf}
+%
+%%%%%% CAPA %%%%%%
+%
+\begin{titlepage}
+
+\begin{center}
+%
+\vspace*{50mm}
+%
+{\Huge Saúde através do desporto }\\ 
+%
+\vspace{10mm}
+%
+{\Large \empresa}\\
+%
+\vspace{10mm}
+%
+{\LARGE Pedro e Carlos}\\ 
+%
+\vspace{30mm}
+%
+\begin{figure}[h]
+\center
+\includegraphics{\logotipo}
+\end{figure}
+%
+\vspace{30mm}
+\end{center}
+%
+\begin{flushright}
+\versao
+\end{flushright}
+\end{titlepage}
+
+%%  Página de Título %%
+\title{%
+{\Huge\textbf{\titulo}}\\
+{\Large \departamento\\ \empresa}
+}
+%
+\author{%
+    \autores \\
+    \autorescontactos
+}
+%
+\date{\today}
+%
+\maketitle
+\pagenumbering{roman}
+
+%%%%%% RESUMO %%%%%%
+\begin{abstract}
+Resumo de 200-300 palavras.
+\end{abstract}
+
+%%%%%% Agradecimentos %%%%%%
+% Segundo glisc deveria aparecer após conclusão...
+%\renewcommand{\abstractname}{Agradecimentos}
+%\begin{abstract}
+%Eventuais agradecimentos.
+%Comentar bloco caso não existam agradecimentos a fazer.
+%\end{abstract}
+
+
+\tableofcontents
+% \listoftables     % descomentar se necessário
+% \listoffigures    % descomentar se necessário
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introdução}
+\label{chap.introducao}
+
+\large
+O tema que escolhido para a realização deste trabalho foi a saúde através do desporto.
+Vamos explorar os diferentes tipos de desportos que existem, como se praticam e a forma como contribuem para a saúde, juntamente com a exploração 
+de boas praticas alimentares.\\
+Através deste trabalho temos como objetivo aprofundar os nossos conhecimentos em relação a um aspeto muito importante e que
+está presente na vida das pessoas, que é a saúde.\\
+Assim, falar sobre este tema é importante, pois hoje em dia são poucas as pessoas que se importam ou que de forma séria têm em conta aspetos fundamentais
+para um estilo de vida saudável.
+
+
+\chapter{Metodologia}
+Para a realização deste trabalho vamos usar conhecimento gerais que fomos adquirindo ao longo do tempo e pesquisas mais aprofundadas em termos específicos,
+através de diferentes fontes, como sites, livros e/ou ajuda de outros profissionais no âmbito.
+\label{chap.metodologia}
+
+\chapter{Desporto}
+\section{O que é a realização de atividade física}
+O exercício físico apresenta-se hoje como uma
+necessidade para o Homem, permite-nos aumentar a qualidade de vida, a
+saúde e o bem-estar no geral, existindo evidências científicas que documentam os
+inúmeros benefícios, quer físicos quer psicológicos da prática desportiva, declarações da \ac{oms}(2014; Matsudo, 2000).Neste sentido, partindo da base que o exercício físico apresenta vantagens para a saúde e que a \ac{oms} (2014) estima que mais do 60\% dos adultos não apresenta níveis recomendáveis de prática desportiva,
+torna-se necessário agir no sentido de promover a regularidade desta no nosso quotidiano.
+Para realizar atividade física não é preciso ser experiente no assunto "desporto" nem procurar professores, os chamados \ac{pt}, que cobram pelo seu tempo. Sendo que atividade física é todo o movimento realizado pelo corpo devido a contração dos músculos que faz gastar energia às células,específicamente estas gastam \ac{atp}, que estão armazernadas no corpo,mais precisamente nas células musculares.\par
+Na atividade física, estão incluídos os momentos em que há movimento, desde um simples movimento até um grande esforço físico, um passeio ou uma deslocação até ao trabalho, são exemplos de uma pratica de atividade física muito moderada.
+\section{Desporto em casa (calistenia)}
+\textbf{Priorizado principalmente o exercício físico utilizando apenas o peso do corpo, sem utilização de outras ferramentas/utensílios, como pesos ou máquinas.} \par
+O treinamento apenas com o peso corporal é chamado de calistenia. Porque permite a pratica de exercicio físico ao ar livre, no quintal de casa e até mesmo dentro de um quarto.\par
+Na calistenia tudo depende de quem está a praticar, porque os exercícios têm um nível de dificuldade progressivo, de acordo com a evolução de desempenho do praticante. Isso permite que qualquer pessoa realize o treino, independentemente da experiência no treinamento.\par
+Apesar de ter exercícios que exigem muita força e condicionamento, como alguns movimentos na argola e a bandeira humana, um dos mais famosos, impressionantes e desafiadores exercícios da calistenia, a pratica da calistenia também possui movimentos básicos como as flexões, prancha e agachamento, que podem ser adaptados para qualquer nível de aptidão física, o que torna o método bem democrático ou seja, qualquer pessoa, de qualquer idade pode fazer.\par
+Uma das grandes vantagens da calistenia é que pode ser praticada em qualquer lugar e em qualquer hora, mas também uma das principais vantagens é que os seus exercícios recrutam vários músculos ao mesmo tempo. Isso proporciona um grande gasto calórico durante e depois da atividade física, aumentando o metabolismo basal, o que favorece a redução de gordura e a definição muscular. Também estimula a produção de testosterona, hormônio importante para o ganho de massa muscular e o emagrecimento.\par
+Como muitos exercícios demandam resistência contrária à ação dos músculos, os praticantes ainda podem se beneficiar com aumento de força, flexibilidade, melhora da postura e da resistência cardiorrespiratória.
+(colocar alguns exercicios, e como ter uma boa execuçao)
+
+\section{Desporto no ginásio}
+\textbf{O ginásio é utilizado por pessoas que querem perder peso, que querem ter uma vida mais saudável, mas maioritariamente por pessoas que querem aumentar a massa muscular e ter um físico mais estético.}\par
+O ginásio é um local espicializado a perda de peso e aumento de massa muscular, com o acompanhamento de profissionais e diversas maquinas que permitem um processo mais rapido.\par
+Uma das desvantagens do ginasio é a mensalidade, mas ao mesmo tempo acaba por ser uma vantagem para muitas pessoas, porque obriga a usufruir do pagamento. O ginasio é um bom local para  fazer amizades o que proporciona um maior prazer na pratica de atividade fisica, ajudando a criar uma rotina e habitos desportivos.\par
+Uma rotina desportiva é a forma mais benefica para a saude, porque durante a pratica de desporto sao libertados hormônios, entre os quais esta a Endorfina, Serotonina, Adrenalina, Somatotrofina (GH), Cortisol.(dizer o que cada um faz/é)
+   Endorfina, substância química que, transportada pelo sangue, faz comunicação com outras células, este é o hormônio do bem estar. Melhora o sistema nervoso central, proporcionando
+ a elevação da auto estima, reduzindo sintomas depressivos e de ansiedade, além de manter o controle do apetite. 
+    A serotonina é um neurotransmissor que atua no cérebro, estabelecendo comunicação entre as células nervosas, podendo também ser encontrada no sistema digestivo e nas plaquetas 
+ do sangue. Esta molécula, também conhecida por "hormônio da felicidade" é produzida a partir do aminoácido triptofano, que é obtido através dos alimentos. A serotonina atua regulando 
+ o humor, sono, apetite, ritmo cardíaco, temperatura corporal, sensibilidade e funções cognitivas e, por isso, quando se encontra numa baixa concentração, pode causar mau humor, 
+ dificuldade para dormir, ansiedade ou mesmo depressão.
+    A somatotrofina, ou hormônio do crescimento, é um hormônio secretado pela adeno-hipófise e sua ação ocorre principalmente no fígado. Esse órgão 
+libera sustâncias semelhantes à insulina para estimular o crescimento de tecidos, como ossos e cartilagens. A ação desse hormônio contribui para o aumento da estatura dos 
+jovens durante a puberdade. A sua ausência, ou mesmo baixa, retarda o crescimento, chegando até mesmo a impedir o desenvolvimento do esqueleto dos indivíduos.
+a adrenalina está relacionada ao aumento do ritmo cardíaco e da força da contração muscular.Esta relaciona-se com a degradação do glicogênio 
+no tecido adiposo, promovendo a degradação de gordura.Outras ações da adrenalina incluem constrição de alguns vasos sanguíneos e aumento das atividades metabólicas.
+\section{Desporto coletivo ou profissional}
+\textbf{Cada desporto tem um treinador que disciplina seu aluno desde a forma física à forma mental para realizar a sua função da maneira mais eficiente
+possível em relação ao desporto em questão.}\par
+Este tipo de desportos promovem o trabalho em equipa e uma maior interação social.
+este tipo de desporto, sendo de alta intensidade ou nao, é realizado de forma acompanhada por um treinador experiente que usa truques para ensinar os seus jogadores, ou seja, tecnicas que
+foi adquirindo ao longo do tempo e comprovado a sua eficacia. Se a pessoa esta a ter um treinamento correto, se tem o descanso necessario para a recuperacao fisica, porque se o obrigamos
+o nosso corpo a um rendimento máximo, isso pode afetar muito negativamente a saúde.
+um dos grNDES exemplos é a natacao, o desporto idulatrado por todos, principalmente pelos pais, mas sera que é assim tao bom para desenvolver capacidades motoras como todas as pessoas dizem? 
+sim, sem duvida é um dos desportos mais completos por movimentar grande parte dos músculos e articulações do corpo. Oferece vários benefícios como: libertacao de tensões e 
+resistência muscular, diminuição do estresse, do colesterol e da pressão arterial, melhora a circulação sanguínea.
+É um desporto excelente para todaas as idades, desde bebes ate idosos. Porque estimula o desenvolvimento psicomotor, Fortalece a capacidade cardiorrespiratória e ajuda na socialização.
+
+
+\chapter{Alimentação}
+\section{Alimentação equilibrada no geral}
+Este tipo de alimentação baseia-se no facto de manter um equilíbrio entre os diferentes macro-nutrientes.
+\section{Alimentação focada no desporto}
+As diferentes modalidades desportivas exigem diferentes tipos de alimentações para uma maior eficiência na sua atividade. 
+\section{Suplementação}
+A suplementação é usada por pessoas com carencias alimentares para determinado objetivo, usando uma fonte exterior à alimentação 
+para conseguir os nutrientes e as vitaminas que precisam. Principalmente usada a proteína e os multi-vitamínicos.
+
+\chapter{Outros aspetos}
+\section{A importância do descanso}
+
+
+
+%Outra referência à \ac{leci}.
+
+%\subsection{Referências bibliográficas}
+%Informação relativa à estrutura formal de um relatório pode ser obtida
+%na página do \ac{glisc}\cite{glisc}.
+
+\chapter{Resultados}
+\label{chap.resultados}
+Descreve os resultados obtidos.
+
+\chapter{Análise}
+\label{chap.analise}
+Analisa os resultados.
+
+\chapter{Conclusões}
+\label{chap.conclusao}
+Apresenta conclusões.
+
+\chapter*{Contribuições dos autores}
+Resumir aqui o que cada autor fez no trabalho.
+Usar abreviaturas para identificar os autores,
+por exemplo AS para António Silva.
+
+\vspace{10pt}
+\textbf{Percentagem de contribuição de cada autor.}\par
+\ac{cv} e \ac{pa}: \par xx\%, yy\%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Acrónimos}
+\begin{acronym}
+\acro{ua}[UA]{Universidade de Aveiro}
+\acro{cv}[CV]{Carlos Verenzuela}
+\acro{pa}[PA]{Pedro Almeida}
+\acro{leci}[LECI]{Licenciatura em Engenharia de Computadores e Informática}
+\acro{glisc}[GLISC]{Grey Literature International Steering Committee}
+\acro{pt}[PT]{Personal trainer}
+\acro{atp}[ATP]{adenosine triphosphate}
+\acro{oms}[OMS]{Organização Mundial da Saúde}
+\end{acronym}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography
+https://www.uol.com.br/vivabem/noticias/redacao/2019/09/18/calistenia-defina-os-musculos-com-exercicios-feitos-so-com-o-peso-do-corpo.htm
+%https://mundoeducacao.uol.com.br/biologia/adrenalina.htm
+%https://www.biologianet.com/anatomia-fisiologia-animal/somatotrofina.htm
+%https://www.tuasaude.com/serotonina/
+%https://www.efdeportes.com/efd149/capacidades-motoras-e-principios-do-treinamento.htm#:~:text=As%20capacidades%20motoras%20são%20componentes,%2C%20Flexibilidade%2C%20Agilidade%20e%20Velocidade.
+%https://www.unimedfortaleza.com.br/blog/movimente-se/hormonios-liberados-na-atividade-fisica#:~:text=“A%20prática%20de%20exercício%20físico,-estar%2C%20vitalidade%20e%20satisfação.
+\end{document}

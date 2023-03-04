@@ -1,0 +1,13 @@
+library 	IEEE;
+use IEEE.STD_LOGIC1164.all;
+
+entity AND2Gate is 
+	port(inPot0 : in std_logic;
+		  inPot0 : in std_logic;
+		  inPot0 : in std_logic);
+end AND2Gate;
+
+architecture Behavioral of AND2Gate is
+begin
+	outPort <= inPort0 and inPort1;
+end Behavioral;

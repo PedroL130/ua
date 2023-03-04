@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ua/LSD/aula1/simulation/qsim
+vGateDemo
+Z1 !s110 1677146967
+!i10b 1
+!s100 DmaP<lOn3o6a[f<`WC3[R1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IIn^62hF_a=gL?E83digZ23
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1677146965
+8GateDemo.vo
+FGateDemo.vo
+!i122 0
+L0 32 72
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1677146967.000000
+!s107 GateDemo.vo|
+!s90 -work|work|GateDemo.vo|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@gate@demo
+vGateDemo_vlg_vec_tst
+R1
+!i10b 1
+!s100 h;P^RlEojmIlc;B]nLPC_3
+R2
+I;]fGfQNc_k>?afLPSS37E1
+R3
+R0
+R4
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 218
+R5
+r1
+!s85 0
+31
+R6
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R7
+R8
+n@gate@demo_vlg_vec_tst

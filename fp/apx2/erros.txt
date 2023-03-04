@@ -1,0 +1,14 @@
+na parte regista - por code,quantidade(0 ou n negativos), random ou colocar CODIGO e vai aparecer taxa ...
+crir dict para quantidade
+
+
+a formatação nao esta 100% correta, quando tem valores superioes a 10 (total bruto por exemplo) o iva
+ como é inferior a 10 nao fica bem alinhado
+
+
+da erro quando é introduzido um codigo existente e a quantidade é invalida(por exemplo letras)
+
+de acordo com o teste 4 o programa rebenta, mas nos teste feitos aparte por mim o programa funciona bem.
+ao introduzir valores inválidos o programa repete a opção "numero de compra?". então para mim este programa passa esse teste.
+
+código robusto e simples

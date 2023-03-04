@@ -1,0 +1,24 @@
+|EqCmpDemo
+cmpPort <= EqCmp4:inst.cmpOut
+inport0[0] => EqCmp4:inst.input0[0]
+inport0[1] => EqCmp4:inst.input0[1]
+inport0[2] => EqCmp4:inst.input0[2]
+inport0[3] => EqCmp4:inst.input0[3]
+inport1[0] => EqCmp4:inst.input1[0]
+inport1[1] => EqCmp4:inst.input1[1]
+inport1[2] => EqCmp4:inst.input1[2]
+inport1[3] => EqCmp4:inst.input1[3]
+
+
+|EqCmpDemo|EqCmp4:inst
+cmpOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+input0[0] => inst.IN1
+input0[1] => inst1.IN1
+input0[2] => inst2.IN1
+input0[3] => inst3.IN0
+input1[0] => inst.IN0
+input1[1] => inst1.IN0
+input1[2] => inst2.IN0
+input1[3] => inst3.IN1
+
+

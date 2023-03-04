@@ -1,0 +1,99 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/pedro/OneDrive/Ambiente de Trabalho/isd/aula 5/test4/simulation/qsim
+vtest4
+Z1 !s110 1667421087
+!i10b 1
+!s100 @LjGf^<>0fAC0e`;2kO9;0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ih:6h_I=3b^GRD1EZ9Cc;n2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1667421085
+8test4.vo
+Ftest4.vo
+!i122 12
+L0 32 74
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1667421086.000000
+!s107 test4.vo|
+!s90 -work|work|test4.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+Etest4_vhd_vec_tst
+Z7 w1667419501
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
+R0
+Z10 8Waveform.vwf.vht
+Z11 FWaveform.vwf.vht
+l0
+L32 1
+VGD_fzAH;k>1]kaVh[Ia_?2
+!s100 :aIO:ZQ1nI07XmBf^?ZaD3
+Z12 OV;C;2020.1;71
+32
+Z13 !s110 1667419513
+!i10b 1
+Z14 !s108 1667419513.000000
+Z15 !s90 -work|work|Waveform.vwf.vht|
+Z16 !s107 Waveform.vwf.vht|
+!i113 1
+R5
+Z17 tExplicit 1 CvgOpt 0
+Atest4_arch
+R8
+R9
+DEx4 work 17 test4_vhd_vec_tst 0 22 GD_fzAH;k>1]kaVh[Ia_?2
+!i122 9
+l47
+L34 50
+V?^I3nEk6gm_0e@FjzB;MT2
+!s100 WV=a8G^V[Uoi6YN33na3a3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R5
+R17
+vtest4_vlg_vec_tst
+R1
+!i10b 1
+!s100 XX5<_>>[oONSIhkZMVOVS1
+R2
+ITkoHQd8a[dGTAGWmK_4EV3
+R3
+R0
+w1667421084
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 13
+L0 30 36
+R4
+r1
+!s85 0
+31
+!s108 1667421087.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6

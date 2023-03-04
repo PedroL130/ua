@@ -1,0 +1,15 @@
+|Mux2_1
+LEDR[0] <= Mux2_1Demo:inst.muxOut
+KEY[0] => Mux2_1Demo:inst.sel
+SW[0] => Mux2_1Demo:inst.input0
+SW[1] => Mux2_1Demo:inst.input1
+
+
+|Mux2_1|Mux2_1Demo:inst
+sel => s_and1Out.IN0
+sel => s_and0Out.IN0
+input0 => s_and0Out.IN1
+input1 => s_and1Out.IN1
+muxOut <= muxOut.DB_MAX_OUTPUT_PORT_TYPE
+
+

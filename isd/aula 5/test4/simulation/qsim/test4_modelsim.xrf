@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/pedro/OneDrive/Ambiente de Trabalho/isd/aula 5/test4/test4.bdf
+source_file = 1, C:/Users/pedro/OneDrive/Ambiente de Trabalho/isd/aula 5/test4/test4.vwf
+source_file = 1, C:/Users/pedro/OneDrive/Ambiente de Trabalho/isd/aula 5/test4/Waveform.vwf
+source_file = 1, C:/Users/pedro/OneDrive/Ambiente de Trabalho/isd/aula 5/test4/db/test4.cbx.xml
+design_name = test4
+instance = comp, \c~output , c~output, test4, 1
+instance = comp, \x~input , x~input, test4, 1
+instance = comp, \y~input , y~input, test4, 1

@@ -1,0 +1,122 @@
+|4x16_with2x4
+0 <= dec2_4:inst1.y0
+e1 => dec2_4:inst.e1
+e0 => inst5.IN0
+x3 => dec2_4:inst.x1
+x2 => dec2_4:inst.x2
+e0_1 => inst6.IN0
+x1 => dec2_4:inst1.x1
+x1 => dec2_4:inst2.x1
+x1 => dec2_4:inst3.x1
+x1 => dec2_4:inst4.x1
+x0 => dec2_4:inst1.x2
+x0 => dec2_4:inst2.x2
+x0 => dec2_4:inst3.x2
+x0 => dec2_4:inst4.x2
+1 <= dec2_4:inst1.y1
+2 <= dec2_4:inst1.y2
+3 <= dec2_4:inst1.y3
+4 <= dec2_4:inst2.y0
+5 <= dec2_4:inst2.y1
+6 <= dec2_4:inst2.y2
+7 <= dec2_4:inst2.y3
+8 <= dec2_4:inst3.y0
+9 <= dec2_4:inst3.y1
+a <= dec2_4:inst3.y2
+b <= dec2_4:inst3.y3
+c <= dec2_4:inst4.y0
+d <= dec2_4:inst4.y1
+e <= dec2_4:inst4.y2
+f <= dec2_4:inst4.y3
+
+
+|4x16_with2x4|dec2_4:inst1
+y3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst3.IN0
+x2 => inst6.IN0
+x2 => inst1.IN0
+x1 => inst3.IN1
+x1 => inst2.IN1
+x1 => inst5.IN0
+e0 => inst4.IN0
+e1 => inst3.IN3
+e1 => inst2.IN3
+e1 => inst1.IN3
+e1 => inst.IN3
+y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4x16_with2x4|dec2_4:inst
+y3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst3.IN0
+x2 => inst6.IN0
+x2 => inst1.IN0
+x1 => inst3.IN1
+x1 => inst2.IN1
+x1 => inst5.IN0
+e0 => inst4.IN0
+e1 => inst3.IN3
+e1 => inst2.IN3
+e1 => inst1.IN3
+e1 => inst.IN3
+y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4x16_with2x4|dec2_4:inst2
+y3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst3.IN0
+x2 => inst6.IN0
+x2 => inst1.IN0
+x1 => inst3.IN1
+x1 => inst2.IN1
+x1 => inst5.IN0
+e0 => inst4.IN0
+e1 => inst3.IN3
+e1 => inst2.IN3
+e1 => inst1.IN3
+e1 => inst.IN3
+y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4x16_with2x4|dec2_4:inst3
+y3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst3.IN0
+x2 => inst6.IN0
+x2 => inst1.IN0
+x1 => inst3.IN1
+x1 => inst2.IN1
+x1 => inst5.IN0
+e0 => inst4.IN0
+e1 => inst3.IN3
+e1 => inst2.IN3
+e1 => inst1.IN3
+e1 => inst.IN3
+y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|4x16_with2x4|dec2_4:inst4
+y3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst3.IN0
+x2 => inst6.IN0
+x2 => inst1.IN0
+x1 => inst3.IN1
+x1 => inst2.IN1
+x1 => inst5.IN0
+e0 => inst4.IN0
+e1 => inst3.IN3
+e1 => inst2.IN3
+e1 => inst1.IN3
+e1 => inst.IN3
+y2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

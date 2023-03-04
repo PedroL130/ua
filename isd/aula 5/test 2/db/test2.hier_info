@@ -1,0 +1,6 @@
+|test2
+c <= and2.DB_MAX_OUTPUT_PORT_TYPE
+x => and2.IN0
+y => and2.IN1
+
+

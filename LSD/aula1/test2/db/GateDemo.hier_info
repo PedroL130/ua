@@ -1,0 +1,6 @@
+|GateDemo
+LEDR[0] <= <GND>
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+
+
