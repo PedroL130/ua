@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LEDG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR6[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW6",
+					"strict" : false
+				},
+				{
+					"name" : "SW5",
+					"strict" : false
+				},
+				{
+					"name" : "SW1",
+					"strict" : false
+				},
+				{
+					"name" : "SW2",
+					"strict" : false
+				},
+				{
+					"name" : "SW4",
+					"strict" : false
+				},
+				{
+					"name" : "SW0",
+					"strict" : false
+				},
+				{
+					"name" : "SW3",
+					"strict" : false
+				},
+				{
+					"name" : "SW7",
+					"strict" : false
+				},
+				{
+					"name" : "SW11",
+					"strict" : false
+				},
+				{
+					"name" : "SW12",
+					"strict" : false
+				},
+				{
+					"name" : "SW217",
+					"strict" : false
+				},
+				{
+					"name" : "SW216",
+					"strict" : false
+				},
+				{
+					"name" : "SW8",
+					"strict" : false
+				},
+				{
+					"name" : "SW9",
+					"strict" : false
+				},
+				{
+					"name" : "SW214",
+					"strict" : false
+				},
+				{
+					"name" : "SW213",
+					"strict" : false
+				},
+				{
+					"name" : "SW10",
+					"strict" : false
+				},
+				{
+					"name" : "SW215",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

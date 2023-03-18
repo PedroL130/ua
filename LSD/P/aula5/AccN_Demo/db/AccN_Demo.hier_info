@@ -1,0 +1,43 @@
+|RegN
+dIn[0] => dOut.DATAB
+dIn[1] => dOut.DATAB
+dIn[2] => dOut.DATAB
+dIn[3] => dOut.DATAB
+dIn[4] => dOut.DATAB
+dIn[5] => dOut.DATAB
+dIn[6] => dOut.DATAB
+dIn[7] => dOut.DATAB
+dOut[0] <= dOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dOut[1] <= dOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dOut[2] <= dOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dOut[3] <= dOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dOut[4] <= dOut[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dOut[5] <= dOut[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dOut[6] <= dOut[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dOut[7] <= dOut[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+r => dOut.OUTPUTSELECT
+r => dOut.OUTPUTSELECT
+r => dOut.OUTPUTSELECT
+r => dOut.OUTPUTSELECT
+r => dOut.OUTPUTSELECT
+r => dOut.OUTPUTSELECT
+r => dOut.OUTPUTSELECT
+r => dOut.OUTPUTSELECT
+clk => dOut[0]~reg0.CLK
+clk => dOut[1]~reg0.CLK
+clk => dOut[2]~reg0.CLK
+clk => dOut[3]~reg0.CLK
+clk => dOut[4]~reg0.CLK
+clk => dOut[5]~reg0.CLK
+clk => dOut[6]~reg0.CLK
+clk => dOut[7]~reg0.CLK
+enable => dOut.OUTPUTSELECT
+enable => dOut.OUTPUTSELECT
+enable => dOut.OUTPUTSELECT
+enable => dOut.OUTPUTSELECT
+enable => dOut.OUTPUTSELECT
+enable => dOut.OUTPUTSELECT
+enable => dOut.OUTPUTSELECT
+enable => dOut.OUTPUTSELECT
+
+

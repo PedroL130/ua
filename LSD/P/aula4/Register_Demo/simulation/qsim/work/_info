@@ -1,0 +1,105 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ua/LSD/P/aula4/Register_Demo/simulation/qsim
+Eregister_demo
+Z1 w1678700783
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 0
+R0
+Z10 8Register_Demo.vho
+Z11 FRegister_Demo.vho
+l0
+L37 1
+V4nj@4J_i5EfiQ5`X0WoY13
+!s100 4YW27c4V[HWYlV3nzCZCN2
+Z12 OV;C;2020.1;71
+32
+Z13 !s110 1678700785
+!i10b 1
+Z14 !s108 1678700784.000000
+Z15 !s90 -work|work|Register_Demo.vho|
+Z16 !s107 Register_Demo.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 13 register_demo 0 22 4nj@4J_i5EfiQ5`X0WoY13
+!i122 0
+l91
+L47 390
+VB;133Nmo0<IY7mZf206jh0
+!s100 l390:mmUK=Z9;@ml0RL_@1
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Eregister_demo_vhd_vec_tst
+R1
+R7
+R8
+!i122 1
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32 1
+VbFjO?cSWd2S>H`MK2^>W62
+!s100 NH>6^_2[;=d:eLki>c;NK0
+R12
+32
+R13
+!i10b 1
+Z21 !s108 1678700785.000000
+Z22 !s90 -work|work|Waveform.vwf.vht|
+!s107 Waveform.vwf.vht|
+!i113 1
+R17
+R18
+Aregister_demo_arch
+R7
+R8
+DEx4 work 25 register_demo_vhd_vec_tst 0 22 bFjO?cSWd2S>H`MK2^>W62
+!i122 1
+l51
+L34 1684
+VWaXeCe`L`G7baQeSB`Ilj3
+!s100 Y_fZc8Y4:zBE:8`h[30iU2
+R12
+32
+R13
+!i10b 1
+R21
+R22
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R17
+R18

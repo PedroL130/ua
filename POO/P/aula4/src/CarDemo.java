@@ -1,54 +1,101 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
+
 class Car {
-    public String make;
-    public String model;
-    public int year;
-    public int kms;
+    private String make;
+    private String model;
+    private int year;
+    private int kms;
 
     public Car(String make, String model, int year, int kms) {
+
         this.make = make;
         this.model = model;
         this.year = year;
         this.kms = kms;
+        
     }
 
-    public void drive(int distance) {
-        //TODO: acumular distância percorrida
+    
+
+    public void carDrive(int distance) {
+        // TODO: acumular distância percorrida
         kms += distance;
+        this.kms = kms;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getKms() {
+        return kms;
     }
 
 }
 
 public class CarDemo {
 
-    static Scanner sc = new Scanner(System.in);
+    private static Scanner sc = new Scanner(System.in);
 
     static int registerCars(Car[] cars) {
         // TODO: pede dados dos carros ao utilizador e acrescenta ao vetor
-        
-       
-        // registo de carros termina quando o utilizador inserir uma linha vazia 
+
+        // registo de carros termina quando o utilizador inserir uma linha vazia
 
         // devolve número de carros registados
-        //ver enunciado
-
-        System.out.print("Insira dados do carro (marca modelo ano quilómetros): ");
+        // ver enunciado
 
         int i = 0;
-        while (sc.hasNext()) {
-            String[] car = sc.next().split(" ");
-            cars[i] = new Car(car[0], car[1], Integer.parseInt(car[2]), Integer.parseInt(car[3]));
+        while (true) {
+            System.out.print("Insira dados do carro (marca modelo ano quilómetros): ");
+
+            String car1 = sc.nextLine();
+
+            String[] car = car1.split(" ");
+
+            if (car[0].equals("")) {
+                break;
+            }
+
+            if(car.length==4 ){
+                String c0 = car[0];
+                String c1 = car[1];
+                int c2 = Integer.parseInt(car[2]);
+                int c3 = Integer.parseInt(car[3]);
+                cars[i] = new Car(c0, c1, c2, c3);
+            }
+            if (car.length<4 ){
+                System.out.println("Invalid value");
+            }
+            
+            
+            
+            
+
+            
             i++;
+
         }
         return i;
     }
 
+
     static void registerTrips(Car[] cars, int numCars) {
         // TODO: pede dados das viagens ao utilizador e atualiza informação do carro
-        // registo de viagens termina quando o utilizador inserir uma linha vazia 
+        // registo de viagens termina quando o utilizador inserir uma linha vazia
         System.out.print("Registe uma viagem no formato \"carro:distância\": ");
-        while (sc.hasNext()) {
+        int i=0;
+        while (i<numCars) {
             String[] trip = sc.next().split(":");
             int distance = 0;
             try {
@@ -57,28 +104,33 @@ public class CarDemo {
                 System.out.println("Invalid value");
             }
 
-            for (int i =0;i<numCars;i++){
-                String car1 = cars[i].make + cars[i].model + cars[i].year;
-                if ( car1  == trip[0] ){
-                    cars[i].drive(distance);
-                }
+            String car1 = cars[i].getMake();
+
+            if ( car1.equals(trip[0])) {
+                cars[i].carDrive(distance);
             }
-            
-            
+            System.out.print(numCars);
+
+            i++;
+
         }
     }
 
-
-    static void listCars(Car[] cars) {
+    static void listCars(Car[] cars, int numCars) {
         System.out.println("\nCarros registados: ");
         // TODO: lista todos os carros registados
         // Exemplo de resultado
-        // Carros registados: 
+        // Carros registados:
         // Toyota Camry, 2010, kms: 234346
         // Renault Megane Sport Tourer, 2015, kms: 32536
-        for (Car car : cars) {
-            System.out.println(car.make + ", " + car.model + ", " + car.year + ", " + car.kms);
+        int i=0;
+        while(i<numCars){
+           
+            System.out.println(cars[i].getMake() + ", " + cars[i].getModel() + ", " + cars[i].getYear() + ", " + cars[i].getKms());
+            
+            i++; 
         }
+        
         System.out.println("\n");
     }
 
@@ -88,10 +140,10 @@ public class CarDemo {
 
         int numCars = registerCars(cars);
 
-        if (numCars>0) {
-            listCars(cars);
+        if (numCars > 0) {
+            listCars(cars,numCars);
             registerTrips(cars, numCars);
-            listCars(cars);
+            listCars(cars,numCars);
         }
 
         sc.close();

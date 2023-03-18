@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.lang.Math;
 
 class Circulo {
-    public double raio;
+    private double raio;
 
     public Circulo(double raio) {
         if (raio<0 ){
@@ -24,7 +24,7 @@ class Circulo {
         this.raio = raio;
     }
 
-    public double Perimetro(){
+    public double calcularPerimetro(){
         return 2*Math.PI*raio;
     }
 
@@ -34,23 +34,36 @@ class Circulo {
 
     
     public String toString(){
-        return "Raio: "+raio+"\nPerimetro: "+Perimetro()+"\nArea: "+Area();
+        return String.format("Circulo [raio=%.2f,perimetro=%.2f,area=%.2f]", raio,calcularPerimetro(),calcularArea());
+        //return "Raio: "+raio+"\nPerimetro: "+calcularPerimetro()+"\nArea: "+calcularArea();
     }
     
     
     public boolean equals(Object obj){
-       if (!(obj instanceof Circulo)){
-        return false;
-       }
-       Circulo other = (Circulo) obj;
-       return raio == other.raio;
+       
+       Circulo c2 = (Circulo) obj ;
+       return raio == c2.getRaio();
     }
        
 }
 
 class Triangulo {
 
-    public double lado1,lado2,lado3;
+    private double lado1,lado2,lado3;
+
+    public Triangulo(double l1, double l2, double l3){
+        if (l1<0 || l2<0 || l3<0){
+            throw new IllegalArgumentException("Os lados nao pode ser negativos");
+        }
+        if (l2 >= l1 + l3 || l1 >= l2 + l3 || l3 >= l2 + l1 ) {
+            throw new IllegalArgumentException("os lados n formam um triangulo");
+        }
+        lado1 = l1;
+        lado2 = l2;
+        lado3 = l3;
+
+
+    }
 
     public double getLado1(){
         return lado1;
@@ -94,18 +107,20 @@ class Triangulo {
         lado3 = l3;
     }
 
-    public double perimetro(){
+    public double calcularPerimetro(){
         return lado1 + lado2 + lado3;
     }
 
-    public double area(){
-        double s = perimetro()/2;
+    public double calcularArea(){
+        double s = calcularPerimetro()/2;
         return Math.sqrt(s*(s-lado1)*(s-lado2)*(s-lado3));
     }
 
     
     public String toString() {
-        return "Lado 1: " + lado1 + " Lado 2: " + lado2 + " Lado 3: " + lado3;
+        return String.format("Triangulo [lado1=%.2f, lado2=%.2f, lado3=%.2f,perimetro=%.2f,area=%.2f]", lado1, lado2, lado3,calcularPerimetro(),calcularArea());
+
+
     }
      
     
@@ -121,7 +136,7 @@ class Triangulo {
 
 class Retangulo {
 
-    public double comprimento,altura;
+    private double comprimento,altura;
 
     public Retangulo(double comprimento, double altura){
         if (comprimento<0 || altura<0){
@@ -162,18 +177,16 @@ class Retangulo {
         return altura * comprimento;
     }
     
-    @Override
+    
     public String toString() {
-        return String.format("Retangulo [altura=%.2f, comprimento=%.2f]", altura, comprimento);
+        return String.format("Retangulo [altura=%.2f, comprimento=%.2f,perimetro=%.2f,area=%.2f]", altura, comprimento,calcularPerimetro(),calcularArea());
     }
     
-    @Override
+    
     public boolean equals(Object obj) {
-        if (!(obj instanceof Retangulo)) {
-            return false;
-        }
-        Retangulo other = (Retangulo) obj;
-        return comprimento == other.comprimento && altura == other.altura;
+        
+        Retangulo r2 = (Retangulo) obj;
+        return comprimento == r2.getComprimento() && altura == getAltura();
     }
 
     
@@ -182,17 +195,20 @@ class Retangulo {
 
 class Teste{
     public static void main(String[] args) {
-        Retangulo r1 = new Retangulo(2, 3);
+        Retangulo r1 = new Retangulo(3, 4);
         Retangulo r2 = new Retangulo(3, 4);
         System.out.println(r1.equals(r2));
-        System.out.println(r1.calcularArea());
+        System.out.println(r1.toString());
         
         Circulo c1 = new Circulo(8);
         Circulo c2 = new Circulo(8);
         System.out.println(c1.equals(c2));
-        System.out.println(c1.calcularArea());
+        System.out.println(c1.toString());
 
-
+        Triangulo t1 = new Triangulo(7,9,7);
+        Triangulo t2 = new Triangulo(7,9,7);
+        System.out.println(t1.equals(t2));
+        System.out.println(t1.toString());
 
         
 
