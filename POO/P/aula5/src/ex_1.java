@@ -106,6 +106,32 @@ class DateYMD {
         
     }
 
+    public void addDays(int days) {
+
+        if(days+day > monthDays(days, days)){
+            if (month==12){
+                this.year++;
+                this.month=1;
+            }else{
+                this.month++;
+            } 
+        }
+
+        if (day == monthDays(month, year)){
+            
+            this.day=days;
+            if (month==12){
+                this.year++;
+                this.month=1;
+            }else{
+                this.month++;
+            }  
+        }else{
+            this.day++;
+        }
+        
+    }
+
     public void decrement() {
         if (day == 1){
             
