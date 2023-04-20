@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity fase4 is
+	port(KEY : in std_logic_vector(1 downto 0); 
+			CLOCK_50 : in std_logic;
+			LEDR : out std_logic_vector(3 downto 0)); 
+
+end fase4;
+
+architecture Behav of fase4 is
+
+count: work.counter(Behav)
+				port map(clk <= CLOCK_50,
+								 reset <= KEY(0),
+								 enable <= KEY(1),
+								 cntOut <= LEDR(0 downto 0));
+
+
+end Behav ;

@@ -1,0 +1,23 @@
+|Up_Down
+clk => s_cnt[0].CLK
+clk => s_cnt[1].CLK
+clk => s_cnt[2].CLK
+clk => s_cnt[3].CLK
+reset => s_cnt.OUTPUTSELECT
+reset => s_cnt.OUTPUTSELECT
+reset => s_cnt.OUTPUTSELECT
+reset => s_cnt.OUTPUTSELECT
+enable => s_cnt.OUTPUTSELECT
+enable => s_cnt.OUTPUTSELECT
+enable => s_cnt.OUTPUTSELECT
+enable => s_cnt.OUTPUTSELECT
+up => s_cnt.OUTPUTSELECT
+up => s_cnt.OUTPUTSELECT
+up => s_cnt.OUTPUTSELECT
+up => s_cnt.OUTPUTSELECT
+output[0] << s_cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] << s_cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] << s_cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] << s_cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

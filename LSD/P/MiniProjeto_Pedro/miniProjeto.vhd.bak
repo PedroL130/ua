@@ -1,0 +1,38 @@
+
+
+
+
+entity contador_crescente_modulo_10_start_stop is
+    port(
+        clock       : in  std_logic;
+        reset       : in  std_logic;
+        enable      : in  std_logic;
+        count       : out std_logic_vector(3 downto 0);
+        is_enabled  : out std_logic
+    );
+end entity;
+
+architecture behavior of contador_crescente_modulo_10_start_stop is
+    signal internal_count : unsigned(3 downto 0);
+    signal d_flip_flop    : std_logic;
+begin
+    process(clock, reset)
+    begin
+        if reset = '1' then
+            internal_count <= (others => '0');
+            d_flip_flop <= '0';
+        elsif rising_edge(clock) then
+            if enable = '1' xor d_flip_flop = '1' then
+                if internal_count = 9 then
+                    internal_count <= (others => '0');
+                else
+                    internal_count <= internal_count + 1;
+                end if;
+            end if;
+            d_flip_flop <= enable;
+        end if;
+    end process;
+
+    count <= std_logic_vector(internal_count);
+    is_enabled <= d_flip_flop;
+end architecture;

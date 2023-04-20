@@ -1,0 +1,36 @@
+# do miniProjeto.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:52:25 on Apr 13,2023
+# vcom -work work miniProjeto.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity Block1
+# -- Compiling architecture structure of Block1
+# End time: 10:52:25 on Apr 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:52:25 on Apr 13,2023
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Block1_vhd_vec_tst
+# -- Compiling architecture Block1_arch of Block1_vhd_vec_tst
+# ** Error: Waveform.vwf.vht(69): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform.vwf.vht(69): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform.vwf.vht(83): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform.vwf.vht(83): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: Waveform.vwf.vht(93): VHDL Compiler exiting
+# End time: 10:52:25 on Apr 13,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Executing ONERROR command at macro ./miniProjeto.do line 4

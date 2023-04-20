@@ -1,0 +1,241 @@
+# Reading pref.tcl
+# do ALU16_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/ua/LSD/P/aula7/ALU16/ALU16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:45:49 on Apr 11,2023
+# vcom -reportprogress 300 -93 -work work C:/ua/LSD/P/aula7/ALU16/ALU16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU16
+# -- Compiling architecture Behavioral of ALU16
+# ** Error (suppressible): C:/ua/LSD/P/aula7/ALU16/ALU16.vhd(20): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
+# ** Note: C:/ua/LSD/P/aula7/ALU16/ALU16.vhd(41): VHDL Compiler exiting
+# End time: 11:45:49 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./ALU16_run_msim_rtl_vhdl.do line 8
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/ua/LSD/P/aula7/ALU16/ALU16.vhd}"
+vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:46:00 on Apr 11,2023
+# vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU16
+# -- Compiling architecture Behavioral of ALU16
+# ** Error (suppressible): C:/ua/LSD/P/aula7/ALU16/ALU16.vhd(20): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
+# ** Note: C:/ua/LSD/P/aula7/ALU16/ALU16.vhd(41): VHDL Compiler exiting
+# End time: 11:46:00 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16_Tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:46:03 on Apr 11,2023
+# vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16_Tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU16_Tb
+# -- Compiling architecture Stimulus of ALU16_Tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ALU16
+# End time: 11:46:03 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.alu16_tb
+# vsim work.alu16_tb 
+# Start time: 11:46:12 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+vsim work.alu16_tb
+# End time: 11:46:12 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# vsim work.alu16_tb 
+# Start time: 11:46:12 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 11:46:12 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.alu16_tb
+# vsim work.alu16_tb 
+# Start time: 11:46:13 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+vsim work.alu16_tb
+# End time: 11:46:13 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# vsim work.alu16_tb 
+# Start time: 11:46:13 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+vsim work.alu16_tb
+# End time: 11:46:16 on Apr 11,2023, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 0
+# vsim work.alu16_tb 
+# Start time: 11:46:16 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+vsim work.alu16_tb
+# End time: 11:46:16 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# vsim work.alu16_tb 
+# Start time: 11:46:16 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 11:46:17 on Apr 11,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim work.alu16_tb(stimulus)
+# vsim work.alu16_tb(stimulus) 
+# Start time: 11:46:22 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 11:46:22 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.alu16
+# vsim work.alu16 
+# Start time: 11:46:58 on Apr 11,2023
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work.alu16' has no architecture.
+# Error loading design
+# End time: 11:46:58 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.alu16_tb
+# vsim work.alu16_tb 
+# Start time: 11:47:00 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# ** Error: (vsim-3170) Could not find 'alu16(behavioral)'.
+#         Searched libraries:
+#             C:/ua/LSD/P/aula7/ALU16/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 11:47:00 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:47:27 on Apr 11,2023
+# vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU16
+# -- Compiling architecture Behavioral of ALU16
+# ** Error (suppressible): C:/ua/LSD/P/aula7/ALU16/ALU16.vhd(20): (vcom-1339) Case statement choices cover only 8 out of 729 cases.
+# ** Note: C:/ua/LSD/P/aula7/ALU16/ALU16.vhd(41): VHDL Compiler exiting
+# End time: 11:47:27 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:55:24 on Apr 11,2023
+# vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU16
+# -- Compiling architecture Behavioral of ALU16
+# End time: 11:55:24 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16_Tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:55:27 on Apr 11,2023
+# vcom -reportprogress 300 -work work C:/ua/LSD/P/aula7/ALU16/ALU16_Tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU16_Tb
+# -- Compiling architecture Stimulus of ALU16_Tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ALU16
+# End time: 11:55:27 on Apr 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.alu16_tb
+# vsim work.alu16_tb 
+# Start time: 11:55:30 on Apr 11,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu16_tb(stimulus)
+# Loading work.alu16(behavioral)
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 0 descending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 descending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 descending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 descending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+add wave -position end  sim:/alu16_tb/s_op
+add wave -position end  sim:/alu16_tb/s_op0
+add wave -position end  sim:/alu16_tb/s_op1
+add wave -position end  sim:/alu16_tb/s_res
+add wave -position end  sim:/alu16_tb/s_mHi
+run
+# End time: 11:58:45 on Apr 11,2023, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 0
