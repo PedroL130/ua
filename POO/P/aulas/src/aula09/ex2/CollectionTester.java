@@ -3,6 +3,7 @@ package aula09.ex2;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 
 
 public class CollectionTester {
@@ -10,9 +11,11 @@ public class CollectionTester {
         int DIM = 5000;
         Collection<Integer> col = new ArrayList<>();
         checkPerformance(col, DIM);
+        
+
     }
 
-    private static void checkPerformance(Collection<Integer> col, int DIM) {
+    public static void checkPerformance(Collection<Integer> col, int DIM) {
         double start, stop, delta;
         // Add
         start = System.nanoTime(); // clock snapshot before
@@ -45,7 +48,25 @@ public class CollectionTester {
         System.out.println(col.size() + ": Remove from " +col.getClass().getSimpleName() + " took " + delta + "ms");
         String p ="-" ;
 
+        List<Integer> dim =new ArrayList<>();
+        dim.add(DIM);
+
         System.out.printf("%-10s", 9);
+    }
+
+    private static void printTable(Collection<Integer>[] collections, int[] sizes, long[][] times) {
+        System.out.printf("%-10s", "Collection");
+        for (int size : sizes) {
+            System.out.printf("%-20s", size);
+        }
+        System.out.println();
+        for (int i = 0; i < collections.length; i++) {
+            System.out.printf("%-10s", collections[i].getClass().getSimpleName());
+            for (int j = 0; j < sizes.length * 3; j += 3) {
+                System.out.printf("%-20d%-20d%-20d", times[i][j] / 1000000, times[i][j + 1] / 1000000, times[i][j + 2] / 1000000);
+            }
+            System.out.println();
+        }
     }
 }
 

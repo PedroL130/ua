@@ -1,0 +1,94 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ua/LSD/P/aula8/DrinksMachine/simulation/modelsim
+Edrinksfsm
+Z1 w1683195243
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/ua/LSD/P/aula8/DrinksMachine/DrinksFSM.vhd
+Z5 FC:/ua/LSD/P/aula8/DrinksMachine/DrinksFSM.vhd
+l0
+L4 1
+VCKL^Rjl@L9[mI;CF;mohR3
+!s100 a3bRTLn`O1gQ8GaK32g<m2
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1683196801
+!i10b 1
+Z8 !s108 1683196801.000000
+Z9 !s90 -reportprogress|300|-work|work|C:/ua/LSD/P/aula8/DrinksMachine/DrinksFSM.vhd|
+Z10 !s107 C:/ua/LSD/P/aula8/DrinksMachine/DrinksFSM.vhd|
+!i113 1
+Z11 o-work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+Z13 DEx4 work 9 drinksfsm 0 22 CKL^Rjl@L9[mI;CF;mohR3
+!i122 1
+l17
+L12 70
+V]`7<cS7P01jGoG?mZ=<?80
+!s100 Mng?IHQYia`f1E6WNHWRI1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edrinksmachinetest
+Z14 w1683197190
+R2
+R3
+!i122 3
+R0
+Z15 8C:/ua/LSD/P/aula8/DrinksMachine/DrinksMachineTest.vhd
+Z16 FC:/ua/LSD/P/aula8/DrinksMachine/DrinksMachineTest.vhd
+l0
+L5 1
+VfaDYDESi^O;[YNSDG=CW11
+!s100 7<P^Q<O]e=5`JPfAezQhY2
+R6
+32
+Z17 !s110 1683197200
+!i10b 1
+Z18 !s108 1683197200.000000
+Z19 !s90 -reportprogress|300|-work|work|C:/ua/LSD/P/aula8/DrinksMachine/DrinksMachineTest.vhd|
+Z20 !s107 C:/ua/LSD/P/aula8/DrinksMachine/DrinksMachineTest.vhd|
+!i113 1
+R11
+R12
+Astimulus
+R13
+R2
+R3
+Z21 DEx4 work 17 drinksmachinetest 0 22 faDYDESi^O;[YNSDG=CW11
+!i122 3
+l17
+Z22 L8 37
+VzG[TNL[>YoHzK^QYDG3M20
+!s100 iO82KK]<GVa4hIjcF`Uh>2
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12

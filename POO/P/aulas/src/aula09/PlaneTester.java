@@ -1,4 +1,8 @@
+package aula09;
+
+import java.util.List;
 import java.util.Scanner;
+
 
 public class PlaneTester {
     public static void main(String[] args) {
@@ -54,24 +58,111 @@ public class PlaneTester {
         scanner.close();
     }
 
-    private static void addPlane(PlaneManager planeManager, Scanner scanner) {
-    }
-
     private static void removePlane(PlaneManager planeManager, Scanner scanner) {
+        System.out.print("Enter the plane's id: ");
+        String id = scanner.next();
+        Plane plane = planeManager.searchPlane(id);
+        if (plane == null) {
+            System.out.println("Plane with id " + id + " does not exist.");
+        } else {
+            planeManager.removePlane(id);
+        }
+
     }
 
     private static void searchPlane(PlaneManager planeManager, Scanner scanner) {
+        System.out.print("Enter the plane's id: ");
+        String id = scanner.next();
+        Plane plane = planeManager.searchPlane(id);
+        if (plane == null) {
+            System.out.println("Plane with id " + id + " does not exist.");
+        } else {
+            System.out.println("Plane with id " + id + " is " + plane.toString());
+        }
+            
     }
 
     private static void printAllPlanes(PlaneManager planeManager) {
+        System.out.println("All planes:");
+        planeManager.printAllPlanes();
     }
 
     private static void printCommercialPlanes(PlaneManager planeManager) {
+        System.out.println("Commercial planes:");
+        List<Plane> planes= planeManager.getCommercialPlanes();
+        if (planes==null)
+            System.out.println("No commercial planes exist.");
+        else 
+            for (Plane plane : planes) {
+                System.out.println(plane.toString());
+            }
     }
 
     private static void printMilitaryPlanes(PlaneManager planeManager) {
+        System.out.println("Military planes:");
+        List<Plane> planes= planeManager.getMilitaryPlanes();
+        if (planes==null)
+            System.out.println("No military planes.");
+        else
+            for (Plane plane : planes) {
+                System.out.println(plane.toString());
+            }
+        
     }
 
     private static void printFastestPlane(PlaneManager planeManager) {
+        System.out.println("Fastest plane:");
+        Plane fastestPlane = planeManager.getFastestPlane();
+        if (fastestPlane == null) {
+            System.out.println("There are no planes.");
+        } else {
+            fastestPlane.toString();
+        }
     }
+
+    private static void addPlane(PlaneManager manager, Scanner scanner) {
+    
+        System.out.println("\nAdicionar um novo avião:");
+        System.out.print("Identificador: ");
+        String id = scanner.nextLine();
+    
+        System.out.print("Fabricante: ");
+        String manufacturer = scanner.nextLine();
+    
+        System.out.print("Modelo: ");
+        String model = scanner.nextLine();
+    
+        System.out.print("Ano de produção: ");
+        int year = scanner.nextInt();
+    
+        System.out.print("Número máximo de passageiros: ");
+        int passengerCount = scanner.nextInt();
+    
+        System.out.print("Velocidade máxima: ");
+        int maxSpeed = scanner.nextInt();
+    
+        System.out.println("Tipo de avião:");
+        System.out.println("1. Comercial");
+        System.out.println("2. Militar");
+    
+        int option = scanner.nextInt();
+    
+        if (option == 1) {
+            System.out.print("Número de tripulantes: ");
+            int crewCount = scanner.nextInt();
+            CommercialPlane plane = new CommercialPlane(id, manufacturer, model, year, passengerCount, maxSpeed, crewCount);
+            manager.addPlane(plane);
+        } else if (option == 2) {
+            System.out.print("Número de munições: ");
+            int ammoCount = scanner.nextInt();
+            MilitaryPlane plane = new MilitaryPlane(id, manufacturer, model, year, passengerCount, maxSpeed, ammoCount);
+            manager.addPlane(plane);
+        } else {
+            System.out.println("Opção inválida. Avião não adicionado.");
+        }
+    
+    }
+    
+
+    
 }

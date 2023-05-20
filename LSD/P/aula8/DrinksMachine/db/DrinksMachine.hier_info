@@ -1,0 +1,21 @@
+|DrinksFSM
+reset => pState.OUTPUTSELECT
+reset => pState.OUTPUTSELECT
+reset => pState.OUTPUTSELECT
+reset => pState.OUTPUTSELECT
+reset => pState.OUTPUTSELECT
+reset => pState.OUTPUTSELECT
+clk => pState~1.DATAIN
+c => nState.DATAA
+c => comb_proc.IN0
+c => nState.DATAA
+v => nState.OUTPUTSELECT
+v => nState.OUTPUTSELECT
+v => comb_proc.IN1
+v => Selector0.IN3
+v => Selector1.IN3
+v => Selector2.IN4
+v => Selector3.IN4
+Drinkout << <GND>
+
+
