@@ -3,26 +3,25 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
 entity AddressGenerator is
-   port(clk : in std_logic;
-        reset : in std_logic;
-        address : out std_logic_vector(7 downto 0));
+   port (
+      clk     : in  std_logic;
+      enable  : in  std_logic;
+      address : out std_logic_vector(7 downto 0)
+   );
 end AddressGenerator;
 
 architecture Behavioral of AddressGenerator is
-   signal counter : integer range 0 to 119 := 0;
+   signal counter : unsigned(7 downto 0);
 begin
-   process(clk, reset)
+   process(clk)
    begin
-      if reset = '1' then
-         counter <= 0;
-         address <= (others => '0');
-      elsif rising_edge(clk) then
-         if counter = 119 then
-            counter <= 0;
-         else
+      if rising_edge(clk) then
+         if enable = '1' then
             counter <= counter + 1;
          end if;
-         address <= std_logic_vector(to_unsigned(counter, 8));
       end if;
    end process;
+
+   address <= std_logic_vector(counter);
 end Behavioral;
+
